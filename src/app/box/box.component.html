@@ -1,12 +1,27 @@
 <div class="container">
-    <div class="d-flex box_container_1" style="margin: 30px 0">
-        <div class="number">
-            25%
+    
+
+    <div *ngFor="let block of block_list; let i = index">
+        <div class="d-flex box_container_1" style="margin: 30px 0">
+            <div class="number">
+                {{ initial_percentage + '%'}} 
+            </div> <!-- End  -->
+            
+            <div class="second" [ngClass]="i == 1 ? 'orange' : ''" [style.width.%]="initial_percentage"> <!-- End  -->
+                &nbsp; 
+            </div> <!-- End  -->
         </div> <!-- End  -->
-        
-        <div class="second"> <!-- End  -->
-            &nbsp; 
-        </div> <!-- End  -->
+    
+
+    </div> <!-- End  block -->
+
+    <div class="d-flex action_block">
+            <div>
+                <button (click)="changePercentage($event, -10)">-10%</button>
+            </div>
+            <div>
+                <button (click)="changePercentage($event, 10)">+10%</button>
+            </div>
 
     </div> <!-- End  -->
 </div> <!-- End Container -->
