@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.second, .number {
+    background: #2b7fa9 !important;
+    position: absolute;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+}
+.number {
+    width: 100%;
+    display: flex;
+    z-index: 14;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: transparent !important;
+}
+.box_container_1 {
+    height: 150px;
+    width : 100%;
+    background: #b2b3b2;
+    position: relative;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}

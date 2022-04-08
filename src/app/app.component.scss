@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.box_container div {
+    height: 150px;
+    width : 100%;
+    background: #2b7fa9;
+    
+}
+.second {
+    background: #b2b3b2 !important;
+}
+
+.box_container_1 {
+    height: 150px;
+    width : 100%;
+    background: #2b7fa9;
+    position: relative;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
